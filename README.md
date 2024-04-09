@@ -39,4 +39,4 @@ The Api Background Worker will process it:
 ![image](https://github.com/faulycoelho/article-web-api-rabbitmq/assets/37049426/c22c1d09-5a61-4ad9-858b-b9204560fc4b)
 
 
-You can get more details in: [https://medium.com/@faulybsb/net-8-web-app-web-api-and-redis-0d4114cc0994](https://medium.com/@faulybsb/net-8-web-app-web-api-and-rabbitmq-e0209f9b1691)
+You can get more details in: https://medium.com/@faulybsb/net-8-web-app-web-api-and-rabbitmq-e0209f9b1691
