@@ -1,0 +1,48 @@
+﻿@model Application.DTOs.PaymentDTO
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Payment</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+<body>
+    <div class="container">
+        <h2>Credit Card Payment</h2>
+        <form asp-action="ProcessPayment" method="post">
+            <hr />
+            <div asp-validation-summary="All" class="text-danger"></div>
+          
+            <div class="form-group">
+                <label asp-for="CardHolderName"></label>
+                <input asp-for="CardHolderName" class="form-control" value="Jose Silva">
+                <span asp-validation-for="CardHolderName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CardNumber"></label>
+                <input asp-for="CardNumber" class="form-control" value="4111 1111 1111 1111" />
+                <span asp-validation-for="CardNumber" class="text-danger"></span>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="ExpiryMonth"></label>
+                    <input asp-for="ExpiryMonth" class="form-control" type="number" maxlength="2" value="10" />
+                    <span asp-validation-for="ExpiryMonth" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="ExpiryYear"></label>
+                    <input asp-for="ExpiryYear" class="form-control" type="number" maxlength="4" value="2039"/>
+                    <span asp-validation-for="ExpiryYear" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="CVV"></label>
+                <input asp-for="CVV" class="form-control" type="number" maxlength="4" value="1234" />
+                <span asp-validation-for="CVV" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-success">Pay Now</button>
+        </form>
+    </div>
+</body>
+</html>

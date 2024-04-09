@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Processing Payment";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Processing Payment</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Processing Payment</h2>
+        <p>We are currently processing your payment. Please wait a moment...</p>
+        <a href="@Url.Action("Index", "Pay")" class="btn btn-primary">Do another Payment</a>
+    </div>
+</body>
+</html>
